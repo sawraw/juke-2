@@ -129,7 +129,7 @@ export default class AppContainer extends Component {
 
                 //Artists (plural)
                 artists: this.state.artists,
-                selectArtist: this.selectArtist
+             
 
           })
           : null}
