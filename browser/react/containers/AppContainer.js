@@ -4,7 +4,6 @@ import axios from 'axios';
 import initialState from '../initialState';
 import AUDIO from '../audio';
 
-import Artists from '../components/Artists.js';
 import Albums from '../components/Albums.js';
 import Album from '../components/Album';
 import Sidebar from '../components/Sidebar';
@@ -108,6 +107,7 @@ export default class AppContainer extends Component {
   }
 
   render () {
+    console.log("this.state.artists .....", this.state.artists);
     return (
       <div id="main" className="container-fluid">
         <div className="col-xs-2">

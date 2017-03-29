@@ -12,7 +12,7 @@ ReactDOM.render(
         {/*child routes will go here*/}
         <Route path='/albums' component={Albums} />
         <Route path="albums/:albumId" component={Album} />
-         <Route path ='/artists' component={Artists} />
+        <Route path ='/artists' component={Artists} />
         <IndexRedirect to="/albums" />
     </Route>
   </Router>

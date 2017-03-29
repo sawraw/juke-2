@@ -1,5 +1,5 @@
 import React from 'react';
-import Artists from './Artists';
+
 import { Link } from 'react-router';
 
 const Sidebar = (props) => {
@@ -11,12 +11,13 @@ const Sidebar = (props) => {
       <img src="juke.svg" className="logo" />
       <section>
         <h4 className="menu-item active">
-          <a href="#" onClick={deselectAlbum}>ALBUMS</a>
-          <Link to={Artists}>ARTISTS</Link>
+          <Link to="/albums" onClick={deselectAlbum}>ALBUMS</Link>
+        </h4>
+        <h4 className="menu-item">
+          <Link to="/artists">ARTISTS</Link>
         </h4>
       </section>
     </sidebar>
   );
 }
-
 export default Sidebar;
