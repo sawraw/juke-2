@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 const Artists = (props) => {
     console.log("props are...", props);
     const artists = props.artists;
-    return(
+    return (
         <div>
         <h3>Artists</h3>
         <div className="list-group">
@@ -13,9 +13,9 @@ const Artists = (props) => {
             return (
             <div className="list-group-item" key={artist.id}>
                 {/* determine where to actually Link to later! */}
-                <Link to="">{ artist.name }</Link>   
+                <Link to={`/artists/${artist.id}`}>{ artist.name }</Link>
             </div>
-            )    
+            );
         })
         }
     </div>
